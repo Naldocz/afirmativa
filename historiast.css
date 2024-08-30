@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fondoNav {
+    background-color: #2F3645;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0); /* Fondo transparente */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0);
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.fondoNav.scrolled {
+    background-color: #FFFFFF; /* Fondo blanco */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra negra */
+}
+
+.fondoNav a {
+    color: #FFFFFF; /* Color blanco para enlaces */
+    transition: color 0.3s; /* Transición suave */
+}
+
+.fondoNav.scrolled a {
+    color: #2F3645; /* Color gris para enlaces cuando se hace scroll */
+}
+
+.fondoNav a:hover {
+    color: #767a81; /* Color azul con transparencia en hover */
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.item-menu {
+    margin-right: 20px;
+}
+
+.item-link {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.item-link:hover {
+    text-decoration: none;
+    transform: translateY(2px);
+}
+
+header#header-2 {
+    background: url('./imagenes/historia-programacion.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    background-attachment: fixed;
+    opacity: 0.7; /* Ajusta la opacidad a lo que desees */
+    filter: brightness(0.7) contrast(1.2); /* Aplica un filtro para ajustar brillo y contraste */
+    z-index: -1;
+
+}
+
+.titulo-blanco {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 48px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.cont-historia {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-hist {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: #F0E9D2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-hist img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.card-text-section {
+    max-width: 50%;
+}
+
+.card-title {
+    font-size: 24px;
+    color: #2F3645;
+    margin-bottom: 10px;
+    font-size: 3rem; /* Tamaño del texto del h2 */
+    font-weight: 400;
+}
+
+.text-hist {
+    color: #2F3645;
+    line-height: 1.6;
+}
+
+.white {
+    background: #FFFFFF;
+}
+
+.contenedorVideo {
+    padding: 10px;
+    background: #fff;
+    font-size: 2rem; /* Tamaño del texto del h2 */
+    font-weight: 400;
+    color: #2f3645;
+    text-align: center;
+}
+
+.container video {
+    border: 10px solid #2f3645; /* Añade un borde fino alrededor del contenedor */
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido dentro de la barra */
+    align-items: center; /* Alinea verticalmente los elementos */
+    background-color: #2f3645; /* Fondo gris */
+    margin: 0 auto 0 auto;
+    padding: 10px; /* Añade un poco de espacio interior */
+    width: 70%;
+    color: white; /* Establece el color del texto como blanco */
+    font-size: 1rem;
+}
+
+.barra .botonesVideo {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    height: 25px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 30px; /* Espacio entre los botones */
+    background-color: #808080; /* Asegura que el fondo sea transparente */
+    border: #767a81; /* Elimina el borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: transform 0.3s ease; /* Animación al hacer clic */
+}
+
+.barra .botonesVideo img {
+    width: 50%; /* Asegura que la imagen se ajuste al tamaño del botón */
+    height: auto;
+}
+
+.barra .botonesVideo:active {
+    transform: scale(0.9); /* Efecto de hundimiento al hacer clic */
+}
+
+
+
+footer {
+    background-color: #2F3645;
+    color: white;
+    padding: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem; /* Tamaño del texto del h2 */
+    font-weight: 200;
+}
+
+.footer-left img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+.titulo-foot {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Scroll y Cambio de Tema */
+.scrolled {
+    background-color: #000080; /* Cambia el color de fondo del nav al hacer scroll */
+}
+
+.body-day {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.body-night {
+    background-color: #2F3645;
+    color: #FFFFFF;
+}
+
+.show {
+    display: block;
+}
+
+.tema {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: #2F3645;
+    padding: 10px;
+}
+
+.item-submenu {
+    padding: 5px;
+    color: #FFFFFF;
+}
